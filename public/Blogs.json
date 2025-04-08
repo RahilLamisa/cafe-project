@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "coverImage": "https://ibb.co.com/wH2fGhf",
+    "title": "Mastering React in 30 Days",
+    "authorImage": "https://ibb.co.com/r2BC0hVz",
+    "authorName": "John Doe",
+    "postedDate": "2025-04-01",
+    "readingTime": "6",
+    "hashtag": ["React", "core_concept"]
+  },
+  {
+    "id": 2,
+    "coverImage": "https://ibb.co.com/RTsHq3sS",
+    "title": "Top 20 VS Code Extensions for Developers",
+    "authorImage": "https://ibb.co.com/p6kWF6wV",
+    "authorName": "Lisa Smith",
+    "postedDate": "2025-03-28",
+    "readingTime": "4",
+    "hashtag": ["WebDevelopment", "html"]
+  },
+  {
+    "id": 3,
+    "coverImage": "https://ibb.co.com/xtZFHsGH",
+    "title": "Understanding Async/Await in JavaScript",
+    "authorImage": "https://ibb.co.com/W4bpdqWT",
+    "authorName": "Raj Kumar",
+    "postedDate": "2025-03-30",
+    "readingTime": "5",
+    "hashtag": ["JavaScript", "development"]
+  },
+  {
+    "id": 4,
+    "coverImage": "https://ibb.co.com/whg2ywbb",
+    "title": "How to Build a Responsive Website from Scratch",
+    "authorImage": "https://ibb.co.com/4n6TT7hW",
+    "authorName": "Emma Brown",
+    "postedDate": "2025-04-05",
+    "readingTime": "7",
+    "hashtag": ["ResponsiveDesign", "mid_level"]
+  },
+  {
+    "id": 5,
+    "coverImage": "https://ibb.co.com/CKDrgxG5",
+    "title": "Beginner's Guide to Git and GitHub",
+    "authorImage": "https://ibb.co.com/fzqD55hz",
+    "authorName": "Ali Hasan",
+    "postedDate": "2025-04-03",
+    "readingTime": "8",
+    "hashtag": ["git", "github"]
+  }
+]
