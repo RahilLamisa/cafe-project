@@ -28,7 +28,7 @@ const Blog = ({blog, handleBookmark, handleMarkAsRead}) => {
     }
     </div>
     <div className="card-actions justify-end items-center">
-      <button onClick={()=>handleMarkAsRead(blog.readingTime)} className="btn btn-primary">Mark as read</button>
+      <button onClick={()=>handleMarkAsRead(blog.readingTime, blog.id)} className="btn btn-primary">Mark as read</button>
       <FaBookmark onClick={() => handleBookmark(blog)} size={25} />
 
     </div>

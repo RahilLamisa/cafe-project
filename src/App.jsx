@@ -15,15 +15,22 @@ function App() {
     setBookmark([...bookmark, blog]);
   }
   
-  const handleMarkAsRead = (time) => {
+  const handleMarkAsRead = (time, id) => {
     // console.log(time);
     const newRead = parseInt(read);
     const newtime = parseInt(time);
     const newTime = newRead + newtime;
     setRead(newTime)
+    handleRemoveFromBookmark(id)
   }
 
-  console.log(read);
+  // console.log(read);
+
+  const handleRemoveFromBookmark = (id) => {
+    const remainingBookmark = bookmark.filter(mark => mark.id!==id)
+    // console.log(remainingBookmark);
+    setBookmark(remainingBookmark)
+  }
 
   return (
     <>
@@ -42,7 +49,7 @@ function App() {
           <h2 className='font-bold text-2xl'>Reading time : {read}</h2>
           <h2 className='font-bold text-2xl'>Bookmark : {bookmark.length}</h2>
           {
-            bookmark.map((mark,i)=> <p key={i}>{mark.title}</p>)
+            bookmark.map((mark,i)=> <p key={i} className='bg-amber-100 p-2 m-2'>{mark.title}</p>)
           }
         </div>
       </div>
