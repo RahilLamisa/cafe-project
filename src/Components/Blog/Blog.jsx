@@ -1,8 +1,10 @@
 import React from 'react';
+import { FaBookmark } from "react-icons/fa";
 
-const Blog = ({blog}) => {
 
-    // const {coverImage} =blog;
+const Blog = ({blog, handleBookmark, handleMarkAsRead}) => {
+    // console.log(handleBookmark);
+
 
     return (
         <div>
@@ -22,11 +24,13 @@ const Blog = ({blog}) => {
     </div>
     <div className='flex justify-between'>
     {
-        blog.hashtag.map(hash => <p>{hash}</p>)
+        blog.hashtag.map((hash, i) => <p key={i}>{hash}</p>)
     }
     </div>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Mark as read</button>
+    <div className="card-actions justify-end items-center">
+      <button onClick={()=>handleMarkAsRead(blog.readingTime)} className="btn btn-primary">Mark as read</button>
+      <FaBookmark onClick={() => handleBookmark(blog)} size={25} />
+
     </div>
   </div>
 </div>
